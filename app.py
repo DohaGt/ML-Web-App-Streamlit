@@ -68,7 +68,7 @@ def main():
         st.sidebar.subheader("Model Hyperparamters")
         C = st.sidebar.number_input("C (Regularization paramter)", 0.01 , 10.0, step= 0.01, key= 'C')
         kernel = st.sidebar.radio("kernel",("rbf","linear"), key ='kernel')
-        gamma = st.sidebar.radio("Gamma(Kernel Coefficient",("scale", "auto"),key='gamma')
+        gamma = st.sidebar.radio("Gamma (Kernel Coefficient",("scale", "auto"),key='gamma')
         
         metrics = st.sidebar.multiselect("What metrics to plot?",('Confusion Matrix','ROC Curve','Precision-Recall Curve'))
         
